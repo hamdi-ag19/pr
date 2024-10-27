@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mines-vs-Treasure - Home</title>
+  <link rel="stylesheet" href="Home.css">
+</head>
+<body dir="auto">
+  <div class="home-container">
+    <h1>Welcome to Mines-vs-Treasure</h1>
+    <form id="gameForm" class="gameForm">
+     
+      <input type="text" id="playerName" name="playerName"placeholder="Enter your name" required autofocus>
+      <br>
+      <div class="Select">
+      <label for="gameLevel">Select level:</label>
+      <select id="gameLevel" name="gameLevel">
+        <option value="easy">Easy</option>
+        <option value="hard">Hard</option>
+      </select>
+      </div>
+      <br><br></br>
+      <button type="submit" class="button">Start Game</button>
+    </form>
+  </div>
+  <script src="Home.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mines-vs-Treasure - Game</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="hud">
+      <p id="playerNameDisplay"></p>
+      <p id="attemptsDisplay">Attempts left: 10</p>
+    </div>
+    <div class="grid">
+      <!-- JavaScript will generate buttons here -->
+    </div>
+    <div class="navigation">
+      <button id="homeButton" class="button">Home</button>
+      <button id="quitButton" class="button">Quit</button>
+    
+  
+    </div>
+  </div>
+  <script src="game.js"></script>
+
+    <!-- Include in Game.html -->
+<audio id="bgMusic" loop>
+  <source src="background.mp3" type="audio/mp3">
+</audio>
+<audio id="clickSound">
+  <source src="click.mp3" type="audio/mp3">
+</audio>
+<audio id="winSound">
+  <source src="238855__pearcewilsonking__collected-item.mp3" type="audio/mp3">
+</audio>
+<audio id="loseSound">
+  <source src="lose.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  document.getElementById('bgMusic').play();
+  
+  function playClickSound() {
+    document.getElementById('clickSound').play();
+  }
+  
+  function playWinSound() {
+    document.getElementById('winSound').play();
+  }
+  
+  function playLoseSound() {
+    document.getElementById('loseSound').play();
+  }
+</script>
+</body>
+</html>
+
